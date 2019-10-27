@@ -1,0 +1,576 @@
+﻿@font-face {
+  font-family: caps;
+  src: url(fonts/caps.ttf);
+}
+@font-face {
+  font-family: normal-bold;
+  src: url(fonts/normal-bold.ttf);
+}
+
+* {
+  margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+  
+  margin: 0 auto;
+  overflow-x: hidden;
+  
+}
+header{
+display: flex;
+flex-direction: raw;
+height: 60px;
+}
+.navbar-brand{
+margin-left: 141.8px;
+margin-top: -10px;
+}
+.navbar-nav{
+margin-left: 580px;
+margin-top: 15px;
+display: inline-block;
+
+}
+
+
+.navbar-nav{
+display: flex;
+flex-direction: row;
+}
+.nav-a{
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+  font-family: caps;
+  transition: 0.3s ease;
+  margin-left: 50px;
+ 
+}
+.nav-active{
+color: #badc58;
+}
+
+.nav-a:hover{
+color: #badc58;
+text-decoration: none;
+}
+.main-pic{
+width: 100%;
+height: calc(100vh - 60px);
+background-image: url("media/main_pic.png");
+background-color: black;
+background-blend-mode: screen;
+object-fit: cover;
+background-position: center;
+z-index: -2;
+
+
+
+}
+.main-pic::after{
+  height: calc(100vh - 60px);
+  content: '';
+  display: block;
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+  
+  
+ 
+  
+}
+
+.main-section{
+  
+  width: 100%;
+   height: calc(100vh - 60px);
+  padding-top: 248px;
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+  
+  
+  
+  
+}
+h1{
+ 
+font-size: 50px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  font-family: caps;
+  
+}
+
+.main-p{
+  
+  font-family: normal-bold;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff; 
+
+}
+
+.p-for-center{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 30px;
+}
+
+.scroll-down{
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  font-family: normal-bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.fa-chevron-down{
+color: #ffffff;
+margin-top: -10px;
+font-size: 18px;
+padding-top: 10px;
+}
+
+
+.more{
+  width: 164px;
+  height: 46px;
+  border-radius: 10px;
+  background-color: #badc58;
+  border: none;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+  font-family: caps;
+  transition: 0.3s all ease;
+}
+
+.more:hover{
+background-color: transparent;
+border: 1px solid #badc58;
+color: #badc58;
+}
+
+.middle{
+display: flex;
+justify-content: center;
+}
+
+.products-layer{
+  overflow-y: hidden;
+  width: 79.3%;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  overflow: auto;
+  margin-top: -50px;
+  background-color: #ffffff;
+  z-index: 10;
+  
+}
+
+h2{
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+  font-family: caps;
+  margin-top: 67px;
+  
+}
+
+.products{
+width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 41px;
+justify-content: space-around;
+}
+
+.spageti{
+  width: 308px;
+  height: 452px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+  
+}
+.spageti:hover{
+box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
+}
+
+.products div:first-child{
+box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
+}
+
+.products div:nth-child(4){
+margin-top: 20px;
+}
+.products div:nth-child(5){
+margin-top: 20px;
+}
+.products div:nth-child(6){
+margin-top: 20px;
+}
+h3{
+font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: center;
+  color: #181818;
+  font-family: caps;
+  margin-top: 48px;
+}
+.pr-p{
+ font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: #535c68;
+}
+.spageti img{
+margin-top: 10px;
+}
+.pr-btn{
+  width: 164px;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #badc58;
+  font-family: caps;
+  border: solid 1px #badc58;
+  background-color: #ffffff;
+  transition: 0.3s all ease;
+}
+.pr-btn:hover{
+border: none;
+color: #181818;
+background-color: #badc58;
+}
+
+.btn3{
+border: none;
+background-color: #ecf0f1;
+color: #bdc3c7;
+}
+.btn3:hover{
+border: none;
+background-color: #ecf0f1;
+color: #bdc3c7;
+}
+
+footer{
+background-color: #292c2f;
+}
+
+.container-black{
+background-color: #292c2f;
+margin-top: -50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.address-layer{
+  width: 79.5%;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-top: 103px;
+  margin-right: 0px;
+  text-align: center;
+  
+  
+}
+address, .address-layer a{
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #f59a63;
+  font-family: caps;
+  margin-top: 22px;
+  display: inline-block;
+}
+
+.address-layer a{
+margin-left: 30px;
+}
+.mapouter{
+    position:relative;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align:center;
+    height: 290px;
+    width: 79.5%;
+}
+
+.gmap_canvas {
+      overflow:hidden;
+      background:none!important;
+      height:290px;
+      width: 100%;
+      border-radius: 20px;
+}
+
+.icons{
+margin-top: 31px;
+width: 79.5%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 35px;
+}
+
+
+
+.fab{
+font-size: 24px;
+color: #ffffff;
+
+}
+.social{
+margin-top: 3px;
+}
+.fa-facebook{
+margin-left: -25px;
+}
+
+.fa-instagram{
+color: #badc58;
+margin-left: 19.6px;
+
+}
+.fa-youtube{
+margin-left: 19.6px;
+}
+
+.card-logo{
+
+}
+
+i{
+cursor: pointer;
+}
+
+i a:hover{
+text-decoration: none;
+color: #ffffff;
+}
+
+.fa-instagram:hover{
+color: #badc58;
+}
+
+
+
+@media screen and (max-width: 1131px) {
+.navbar-nav{
+margin-left: 100px;
+
+
+}
+}
+
+@media screen and (max-width: 1024px) {
+.main-section{
+padding-top: 128px;
+}
+
+@media screen and (max-width: 943px) {
+.products div:nth-child(3){
+margin-top: 20px;
+
+}
+}
+
+@media screen and (max-width: 772px) {
+h1{
+font-size: 24px;
+
+}
+}
+
+@media screen and (max-width: 772px) {
+.icons{
+flex-direction: column;
+align-items: center;
+
+}
+
+.social{
+margin-left: 30px;
+}
+
+.card-logo{
+
+margin-top: 45.3px;
+}
+.academy-logo{
+position: relative;
+top: 175px;
+
+
+}
+
+
+@media screen and (max-width: 695px) {
+.navbar-nav{
+margin-left: 0px;
+
+}
+}
+
+@media screen and (max-width: 635px) {
+.products div:nth-child(2){
+margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 605px) {
+.navbar-nav{
+margin-left: 0px;
+}
+.nav-a{
+margin-left: 10px;
+}
+.navbar-brand{
+margin-left: 10px;
+}
+}
+
+@media screen and (max-width: 504px) {
+address, .address-layer a{
+display: block;
+font-size: 12px;
+
+}
+address{
+margin-top: 10px;
+margin-left: 0px;
+
+}
+
+.address-layer a{
+margin-top: 10px;
+margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 475px) {
+h2{
+font-size: 20px;
+}
+
+
+@media screen and (max-width: 347px) {
+
+.navbar-nav{
+display: block;
+margin-left: 15px;
+margin-top: 0px;
+}
+header{
+display:block;
+height: 120px;
+}
+.main-pic:after{
+
+top: 120px;
+}
+.main-section{
+top: 120px;
+}
+
+.address-layer{
+height: 80px;
+}
+
+h1{
+font-size: 20px;
+}
+}
+
+@media screen and (max-width: 296px) {
+h1{
+font-size: 14px;
+}
+
+
+}
+
+@media screen and (max-width: 209px) {
+h1{
+font-size: 12px;
+}
+
+}
+
+@media screen and (max-width: 193px) {
+address, address-layer a{
+font-size: 10px;
+}
+
+
+
+
+
+
+
+
