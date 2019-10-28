@@ -427,7 +427,7 @@ color: #badc58;
 
 @media screen and (min-width: 1366px) {
 	.products-layer{
-		display: none;
+		width: 1086px;
 	}
 	}
 
