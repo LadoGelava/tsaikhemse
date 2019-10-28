@@ -94,6 +94,7 @@ z-index: -2;
 .main-section{
   
   width: 100%;
+  min-width: 100%;
    height: calc(100vh - 60px);
   padding-top: 248px;
   position: absolute;
@@ -418,6 +419,13 @@ color: #ffffff;
 color: #badc58;
 }
 
+
+
+@media screen and (min-width: 1366px) {
+	.products-layer{
+		width: 1086px;
+	}
+	}
 
 
 @media screen and (max-width: 1131px) {
