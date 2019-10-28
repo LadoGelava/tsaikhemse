@@ -75,6 +75,7 @@ z-index: -2;
 
 
 
+
 }
 .main-pic::after{
   height: calc(100vh - 60px);
@@ -195,12 +196,15 @@ justify-content: center;
 .products-layer{
   overflow-y: hidden;
   width: 79.3%;
+  position: relative;
   border-radius: 20px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   overflow: auto;
   margin-top: -50px;
   background-color: #ffffff;
   z-index: 10;
+  
+
   
 }
 
@@ -423,7 +427,7 @@ color: #badc58;
 
 @media screen and (min-width: 1366px) {
 	.products-layer{
-		width: 1086px;
+		display: none;
 	}
 	}
 
@@ -574,11 +578,4 @@ font-size: 12px;
 address, address-layer a{
 font-size: 10px;
 }
-
-
-
-
-
-
-
-
+}

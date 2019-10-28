@@ -1,20 +1,12 @@
-﻿document.addEventListener("DOMContentLoaded", function() {
-    var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-  
-    if ("IntersectionObserver" in window) {
-      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            let lazyImage = entry.target;
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImage.classList.remove("lazy");
-            lazyImageObserver.unobserve(lazyImage);
-          }
-        });
-      });
-  
-      lazyImages.forEach(function(lazyImage) {
-        lazyImageObserver.observe(lazyImage);
-      });
-    } 
-  });
+﻿
+	function scrollWin() {
+  	window.scrollBy(0, 2); // horizontal and vertical scroll 					increments
+  	scrolldelay = setTimeout('scrollWin()', 1); // scrolls 						every 100 milliseconds
+
+	 if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+	
+	clearTimeout(scrolldelay);
+    scrolldelay = setTimeout('PageUp()', 2000);
+	}
+	}
+ 
