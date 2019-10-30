@@ -14,6 +14,10 @@
 	list-style: none;
 }
 
+*:focus {
+    outline: 0 !important;
+}
+
 body {
   
   margin: 0 auto;
@@ -179,6 +183,7 @@ padding-top: 10px;
   color: #181818;
   font-family: caps;
   transition: 0.3s all ease;
+  
 }
 
 .more:hover{
