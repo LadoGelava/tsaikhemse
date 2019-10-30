@@ -505,6 +505,35 @@ padding-top: 48px;
 }
 }
 
+
+@media screen and (max-height: 371px) {
+.main-section{
+padding-top: 30px;
+}
+
+h1{
+font-size: 14px;
+}
+
+.main-p{
+font-size: 12px;
+margin-top: -10px;
+}
+
+.more{
+font-size: 10px;
+width: 100px;
+height: 25px;
+}
+
+.scroll-down{
+margin-top: 0px;
+}
+.fa-chevron-down{
+padding-top: 0px;
+}
+}
+
 @media screen and (max-width: 772px) {
 .icons{
 flex-direction: column-reverse;
@@ -602,9 +631,12 @@ flex-direction: column;
 align-items: start;
 }
 
+.main-pic{
+height: calc(100vh - 60px);
+}
 
 .main-pic:after{
-
+height: calc(100vh - 110px);
 top: 110px;
 }
 
